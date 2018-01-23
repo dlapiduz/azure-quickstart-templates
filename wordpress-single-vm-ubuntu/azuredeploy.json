@@ -44,7 +44,7 @@
     "addressPrefix": "10.0.0.0/16",
     "imagePublisher": "Canonical",
     "imageVersion": "latest",
-    "imageSKU": "14.04.2-LTS",
+    "imageSKU": "16.04-LTS",
     "imageOffer": "UbuntuServer",
     "subnetName": "Subnet-1",
     "subnetPrefix": "10.0.0.0/24",
@@ -154,7 +154,7 @@
           "osDisk": {
             "name": "osdisk1",
             "vhd": {
-              "uri": "[concat('http://',parameters('newStorageAccountName'),'.blob.core.windows.net/',variables('vmStorageAccountContainerName'),'/','osdisk1.vhd')]"
+              "uri": "[concat('http://',parameters('newStorageAccountName'),'.blob.core.usgovcloudapi.net/',variables('vmStorageAccountContainerName'),'/','osdisk1.vhd')]"
             },
             "caching": "ReadWrite",
             "createOption": "FromImage"
